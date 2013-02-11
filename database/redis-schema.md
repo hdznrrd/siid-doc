@@ -42,15 +42,16 @@ Namespace below intend consists of each sensor's unique id as defined `sensordat
 Data is stored as JSON array with the first element being unixtime and the second the sensor value.
 
 ##### Example
-<pre>redis 127.0.0.1:6379> lrange sensordata.shackspace.20745965.data.L1.Voltage -10 -1
- 1) "[1360608494,235.08]"
- 2) "[1360608496,235.28]"
- 3) "[1360608498,235.09]"
- 4) "[1360608500,235.27]"
- 5) "[1360608502,235.27]"
- 6) "[1360608504,235.44]"
- 7) "[1360608506,235.40]"
- 8) "[1360608508,235.60]"
- 9) "[1360608510,235.66]"
-10) "[1360608512,235.62]"</pre>
+<pre>redis 127.0.0.1:6379> lrange sensordata.shackspace.20745965.data.L1.Power -10 -1
+ 1) "[1360609006,01195]"
+ 2) "[1360609008,01200]"
+ 3) "[1360609010,01208]"
+ 4) "[1360609012,01178]"
+ 5) "[1360609014,01184]"
+ 6) "[1360609016,01199]"
+ 7) "[1360609018,01215]"
+ 8) "[1360609020,01215]"
+ 9) "[1360609022,01193]"
+10) "[1360609024,01199]"
+</pre>
 

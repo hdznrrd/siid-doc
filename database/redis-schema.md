@@ -21,20 +21,17 @@ Value: JSON
 Sensor types may include: "actual", "cummulative", "minimum", "maximum", "average".
 
 ##### Example
-<pre>
-sensordata.shackspace.20745965.config
-		sensors = {
-								"L1.Voltage": {unit: "V", type:"actual" },
-								"L1.Current": {unit: "A", type:"actual" },
-								"L1.Power": {unit: "W", type:"actual" },
-								"L2.Voltage": {unit: "V", type:"actual" },
-								"L2.Current": {unit: "A", type:"actual" },
-								"L2.Power": {unit: "W", type:"actual" },
-								"L3.Voltage": {unit: "V", type:"actual" },
-								"L3.Current": {unit: "A", type:"actual" },
-								"L3.Power": {unit: "W", type:"actual" },
-								"Total": {unit: "W", type:"cummulative"}
-								}
+<pre>redis 127.0.0.1:6379> get sensordata.shackspace.20745965.config.sensors
+"{\"L1.Voltage\": {\"unit\": \"V\", \"type\":\"actual\"},
+\"L2.Voltage\": {\"unit\": \"V\", \"type\":\"actual\"},
+\"L3.Voltage\": {\"unit\": \"V\", \"type\":\"actual\"},
+\"L1.Current\": {\"unit\": \"A\", \"type\":\"actual\"},
+\"L2.Current\": {\"unit\": \"A\", \"type\":\"actual\"},
+\"L3.Current\": {\"unit\": \"A\", \"type\":\"actual\"},
+\"L1.Power\": {\"unit\": \"W\", \"type\":\"actual\"},
+\"L2.Power\": {\"unit\": \"W\", \"type\":\"actual\"},
+\"L3.Power\": {\"unit\": \"W\", \"type\":\"actual\"},
+\"Total\": {\"unit\": \"W\", \"type\":\"cummulative\"}}"
 </pre>
 
 #### Intend: data

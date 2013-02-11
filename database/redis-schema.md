@@ -37,15 +37,22 @@ sensordata.shackspace.20745965.config
 </pre>
 
 #### Intend: data
-Namespace below intend consists of each sensor's unique id.
-The data store is implemented as `sorted set` with the unix time as score value and sensor value being the actual value.
+Type: LIST
+
+Namespace below intend consists of each sensor's unique id as defined `sensordata.shackspace.*.config.sensors`.
+
+Data is stored as JSON array with the first element being unixtime and the second the sensor value.
 
 ##### Example
-<pre>redis 127.0.0.1:6379> .shackspace.20745965.data.L1.Voltage 0 -1 withscores
-  1) "233.35"
-  2) "1360603257"
-  3) "233.75"
-  4) "1360603259"
-  5) "234.47"
-  6) "1360603587"</pre>
+<pre>redis 127.0.0.1:6379> lrange sensordata.shackspace.20745965.data.L1.Voltage -10 -1
+ 1) "[1360608494,235.08]"
+ 2) "[1360608496,235.28]"
+ 3) "[1360608498,235.09]"
+ 4) "[1360608500,235.27]"
+ 5) "[1360608502,235.27]"
+ 6) "[1360608504,235.44]"
+ 7) "[1360608506,235.40]"
+ 8) "[1360608508,235.60]"
+ 9) "[1360608510,235.66]"
+10) "[1360608512,235.62]"</pre>
 

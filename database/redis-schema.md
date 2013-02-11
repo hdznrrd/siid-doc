@@ -1,4 +1,3 @@
-
 # shackspace redis schema
 ## Sensor Data Store
 ### Namespace Hierarchy
@@ -14,7 +13,9 @@ Level 4+: Different meanings depending on Level 3
 Type: SET
 
 Key: sensors
+
 Value: JSON
+
 <pre>{ "<sensor channel unique id>": { unit: "<SI unit>", type: "<sensor type>" }</pre>
 
 Sensor types may include: "actual", "cummulative", "minimum", "maximum", "average".

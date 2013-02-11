@@ -1,8 +1,9 @@
-# Hager Power Meter 
-## Raw OBIS Message
+# Hager Power Meter Raw OBIS Message
 
 The power meter setup built by Alex is reporting raw data to http://powerraw.shack:11111/.
+The documentation of the various available key/value fields in the message can be found in the official (documentation)[ehz_betriebsanleitung_mid.pdf]
 The following is a message as reported on 2013-02-11 17:14
+
 <pre>Current epoch time: 1360599258
 /HAG5eHZ010C_IEnBWA02
 

@@ -14,3 +14,19 @@ Apps are triggered from the presentation layer.
 ### Presentation
 Plotting is done using the [g.raphaeljs](http://g.raphaeljs.com/) library.
 [twitter Bootstrap](twitter.github.com/bootstrap) is used for quick and easy prototyping of the GUI.
+
+## Setting up siid
+The following two are required but not handled by siid
+
+- A redis instance to hold captured data
+- A means to capture data and push it to redis
+
+
+### Installation
+
+<pre>apt-get install lighttpd python python-pip
+pip install redis
+cd /var/www/
+git clone git://github.com/hdznrrd/siid.git</pre>
+
+Now [configure your lighttpd](lighttpd/README.md).

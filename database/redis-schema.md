@@ -16,7 +16,7 @@ Key: sensors
 
 Value: JSON
 
-<pre>{ "<sensor channel unique id>": { unit: "<SI unit>", type: "<sensor type>" }</pre>
+<pre>{ "[sensor channel unique id]": { unit: "[SI unit]", type: "[sensor type]" }</pre>
 
 Sensor types may include: "actual", "cummulative", "minimum", "maximum", "average".
 
